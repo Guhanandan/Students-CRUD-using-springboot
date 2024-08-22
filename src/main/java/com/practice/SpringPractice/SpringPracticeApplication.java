@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringPracticeApplication {
 
-    
+    // http://localhost:8080/
     @GetMapping("/")
     public String root() {
         return "This is from the Spring Boot backend server";
     }
 
+    // http://localhost:8080/home
     @GetMapping("/home")
     public String home(@RequestParam(value = "name", defaultValue = "World") String name) {
         return String.format("Hello %s", name);

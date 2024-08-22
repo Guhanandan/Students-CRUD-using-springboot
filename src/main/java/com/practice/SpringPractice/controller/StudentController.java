@@ -17,6 +17,7 @@ import com.practice.SpringPractice.model.Student;
 import com.practice.SpringPractice.service.StudentService;
 
 @RestController
+// http://localhost:8080/api/students
 @RequestMapping("/api/students")
 public class StudentController {
 
